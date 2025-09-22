@@ -81,29 +81,19 @@ Story Prompt → Plot Architecture → Character Development → Scene Writing �
 
 ### Running the Story Writing Crew
 
-1. **Test the setup**:
-   ```bash
-   python test_setup.py
-   ```
-
-2. **Execute the main script**:
+1. **Execute the main script**:
    ```bash
    python main.py
    ```
 
-3. **Follow the prompts**:
+2. **Follow the prompts**:
    - Enter a custom story prompt or use the default
    - Review the crew configuration
    - Confirm to start the writing process
 
-4. **Wait for completion**:
+3. **Wait for completion**:
    - The process typically takes 5-15 minutes
    - Output files are saved automatically
-
-5. **Try the configuration demo**:
-   ```bash
-   python config_demo.py
-   ```
 
 ## 📁 Project Structure
 
@@ -115,11 +105,9 @@ crewai/
 ├── config.py          # LLM configuration and model management
 ├── main.py            # Execution script
 ├── example.py         # Example usage scripts
-├── config_demo.py     # Configuration demonstration script
-├── test_setup.py      # Setup validation script
-├── setup.py           # Automated setup script
+demonstration script
 ├── requirements.txt   # Python dependencies
-├── .env.example       # Environment variables template
+template
 ├── .gitignore         # Git ignore rules
 └── README.md          # This file
 ```
