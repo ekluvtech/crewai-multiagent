@@ -187,19 +187,6 @@ config_summary = config.get_config_summary()
 print(f"Available models: {config_summary['available_local_models']}")
 ```
 
-### Configuration Demo
-
-Run the configuration demonstration script:
-```bash
-python config_demo.py
-```
-
-This will show you:
-- Current configuration settings
-- Available models and their descriptions
-- How to test different models
-- Interactive model selection
-
 ## 📋 Output Files
 
 The crew automatically generates several output files:
@@ -302,10 +289,6 @@ Feel free to extend this project by:
 - Implementing additional LLM providers
 - Adding story evaluation metrics
 - Creating web interfaces
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ## 🆘 Troubleshooting
 
