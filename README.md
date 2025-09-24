@@ -27,6 +27,7 @@ Our story-writing crew features four specialized AI agents:
 - **Output**: Polished final story with editorial report
 
 ## 🏗️ Architecture
+<img width="1024" height="429" alt="crewai-1024x429" src="https://github.com/user-attachments/assets/c3633ed7-c4de-483c-a34a-10c09f62e5e9" />
 
 The system follows CrewAI's core pillars:
 
