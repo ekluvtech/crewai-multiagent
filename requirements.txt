@@ -1,0 +1,6 @@
+crewai
+crewai-tools
+langchain>=0.1.10
+langchain-ollama>=0.1.0
+python-dotenv>=1.0.0
+requests>=2.31.0
