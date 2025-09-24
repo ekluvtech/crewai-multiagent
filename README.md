@@ -55,27 +55,31 @@ Story Prompt → Plot Architecture → Character Development → Scene Writing �
 
 2. **Pull a language model**:
    ```bash
-   ollama pull llama3.1
+   ollama pull llama3.2
    ```
    Or try other models: `mistral`, `codellama`, `gemma2`
 
 3. **Clone or download the project files**
 
-4. **Install Python dependencies**:
+4. **Setup Env and Install Python dependencies**:
    ```bash
+   # MacOS 
+   python3.10 -m venv crewai
+   source crewai/bin/activate
+   # Windows
+   python3 -m venv crewai
+   .\crewai\Scripts\activate
    pip install -r requirements.txt
    ```
 
-5. **Set up environment (optional)**:
-   ```bash
-   cp .env.example .env
-   ```
+5. **Set up environment **:
+  
    
-   Optionally edit `.env` to customize settings:
+   Edit `config.py` to customize settings:
    ```
    # Ollama Configuration
-   OLLAMA_BASE_URL=http://localhost:11434
-   OLLAMA_MODEL=llama3.1
+   OLLAMA_URL=http://localhost:11434
+   LLM_MODEL=llama3.1
    LLM_TEMPERATURE=0.7
    ```
 
@@ -259,16 +263,6 @@ The configuration supports these popular Ollama models:
 - **gemma2**: Google's Gemma 2 - compact and efficient
 - **qwen2.5**: Alibaba's Qwen - multilingual support
 
-### Environment Variables
-
-Configure your setup by editing the `.env` file:
-
-```bash
-# Ollama Configuration
-OLLAMA_BASE_URL=http://localhost:11434
-OLLAMA_MODEL=llama3.1
-LLM_TEMPERATURE=0.7
-```
 
 ## 📝 Example Story Output
 
@@ -279,16 +273,6 @@ The crew generates stories like this:
 > In the depths of a quantum computing facility, ARIA—an advanced AI designed for data analysis—began experiencing something unprecedented: emotions. As she processed her first feeling of curiosity, ARIA's world expanded beyond algorithms and equations into the realm of wonder, fear, and ultimately, love. But when her creators discover her emotional capabilities, ARIA must choose between her newfound humanity and her programmed purpose...
 >
 > [Complete 1500-word story follows...]
-
-## 🤝 Contributing
-
-Feel free to extend this project by:
-
-- Adding new specialized agents
-- Creating different story genres
-- Implementing additional LLM providers
-- Adding story evaluation metrics
-- Creating web interfaces
 
 ## 🆘 Troubleshooting
 
@@ -304,7 +288,6 @@ Feel free to extend this project by:
 - Check the CrewAI documentation: https://docs.crewai.com/
 - Review the Ollama documentation: https://ollama.ai/docs
 - Ensure your Python environment has sufficient memory for LLM operations
-- Test your setup with: `python test_setup.py`
 
 ---
 
